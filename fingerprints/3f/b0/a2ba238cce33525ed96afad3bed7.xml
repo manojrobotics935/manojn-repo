@@ -1,0 +1,19 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2022-11-12 05:48:39.919 UTC</timestamp>
+  <md5sum>3fb0a2ba238cce33525ed96afad3bed7</md5sum>
+  <fileName>Credential id=cproject name=ubuntu</fileName>
+  <usages/>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet plugin="credentials@1189.vf61b_a_5e2f62e">
+      <timestamp>1668356445397</timestamp>
+      <nodeName>maven</nodeName>
+      <timestamp0>1668356205399</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet>
+    <com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet plugin="credentials@1189.vf61b_a_5e2f62e">
+      <timestamp>1668356445398</timestamp>
+      <nodeName>cproject</nodeName>
+      <timestamp0>1668356205401</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.NodeCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>

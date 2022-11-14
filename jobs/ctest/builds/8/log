@@ -1,0 +1,89 @@
+Started by user [8mha:////4HykfVF1eZ5j4Bzs3Jg3jq4fs9wDbvkubdZZoxj16PC3AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mmanoj
+Running as SYSTEM
+Building remotely on [8mha:////4BCaGD57/DedzA2GmY15h9qiwJM7r0C6aI4Xuku2i7AFAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6yQVF+VmpySUAECiHo8cAAAA=[0mcproject (gcc) in workspace /home/ubuntu/workspace/ctest
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/ubuntu/workspace/ctest/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/nmanojkoli1997/devopsclass.git # timeout=10
+Fetching upstream changes from https://github.com/nmanojkoli1997/devopsclass.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/nmanojkoli1997/devopsclass.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/main^{commit} # timeout=10
+Checking out Revision 0fa182cac12c0ca287b716eb4d16232258cf4bd6 (origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0fa182cac12c0ca287b716eb4d16232258cf4bd6 # timeout=10
+Commit message: "merge"
+ > git rev-list --no-walk 0fa182cac12c0ca287b716eb4d16232258cf4bd6 # timeout=10
+[ctest] $ /bin/bash /tmp/jenkins18292949802847279636.sh
+gcc -c main.c
+main.c:1:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    1 | main(){
+      | ^~~~
+main.c: In function ‘main’:
+main.c:2:1: warning: implicit declaration of function ‘fib’ [-Wimplicit-function-declaration]
+    2 | fib();
+      | ^~~
+main.c:3:1: warning: implicit declaration of function ‘fact’ [-Wimplicit-function-declaration]
+    3 | fact();
+      | ^~~~
+main.c:4:1: warning: implicit declaration of function ‘big2’ [-Wimplicit-function-declaration]
+    4 | big2();
+      | ^~~~
+main.c:5:1: warning: implicit declaration of function ‘big3’ [-Wimplicit-function-declaration]
+    5 | big3();
+      | ^~~~
+main.c:6:1: warning: implicit declaration of function ‘pall’ [-Wimplicit-function-declaration]
+    6 | pall();
+      | ^~~~
+main.c:7:1: warning: implicit declaration of function ‘rev’ [-Wimplicit-function-declaration]
+    7 | rev();
+      | ^~~
+main.c:8:1: warning: implicit declaration of function ‘sum’ [-Wimplicit-function-declaration]
+    8 | sum();
+      | ^~~
+main.c:9:1: warning: implicit declaration of function ‘sort’ [-Wimplicit-function-declaration]
+    9 | sort();
+      | ^~~~
+gcc -c big2.c
+big2.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    3 | big2() {
+      | ^~~~
+gcc -c big3.c
+big3.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    3 | big3() {
+      | ^~~~
+gcc -c fact.c
+fact.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    2 | fact() {
+      | ^~~~
+gcc -c fibanaci.c
+fibanaci.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    2 | fib() {
+      | ^~~
+gcc -c pallindrome.c
+pallindrome.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    2 | pall() {
+      | ^~~~
+gcc -c reverse.c
+reverse.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    2 | rev()
+      | ^~~
+reverse.c: In function ‘rev’:
+reverse.c:8:4: warning: implicit declaration of function ‘gets’; did you mean ‘fgets’? [-Wimplicit-function-declaration]
+    8 |    gets(s);
+      |    ^~~~
+      |    fgets
+gcc -c sortingnumbers.c 
+sortingnumbers.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    3 | sort()
+      | ^~~~
+gcc -c sumof2numbers.c
+sumof2numbers.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    2 | sum() {
+      | ^~~
+gcc -o ABC.exe main.o big2.o  big3.o  fact.o  fibanaci.o  pallindrome.o  reverse.o  sortingnumbers.o  sumof2numbers.o
+/usr/bin/ld: reverse.o: in function `rev':
+reverse.c:(.text+0x47): warning: the `gets' function is dangerous and should not be used.
+Finished: SUCCESS

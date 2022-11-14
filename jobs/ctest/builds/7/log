@@ -1,0 +1,24 @@
+Started by user [8mha:////4HykfVF1eZ5j4Bzs3Jg3jq4fs9wDbvkubdZZoxj16PC3AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mmanoj
+Running as SYSTEM
+Building remotely on [8mha:////4BCaGD57/DedzA2GmY15h9qiwJM7r0C6aI4Xuku2i7AFAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6yQVF+VmpySUAECiHo8cAAAA=[0mcproject (gcc) in workspace /home/ubuntu/workspace/ctest
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/ubuntu/workspace/ctest/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/nmanojkoli1997/devopsclass.git # timeout=10
+Fetching upstream changes from https://github.com/nmanojkoli1997/devopsclass.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/nmanojkoli1997/devopsclass.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/main^{commit} # timeout=10
+Checking out Revision 0fa182cac12c0ca287b716eb4d16232258cf4bd6 (origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0fa182cac12c0ca287b716eb4d16232258cf4bd6 # timeout=10
+Commit message: "merge"
+ > git rev-list --no-walk 0fa182cac12c0ca287b716eb4d16232258cf4bd6 # timeout=10
+[ctest] $ /bin/bash /tmp/jenkins11107186984144993600.sh
+gcc -c main.c
+make: gcc: No such file or directory
+make: *** [Makefile:5: main.o] Error 127
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

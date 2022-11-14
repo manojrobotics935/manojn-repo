@@ -1,0 +1,57 @@
+Started by user [8mha:////4HykfVF1eZ5j4Bzs3Jg3jq4fs9wDbvkubdZZoxj16PC3AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mmanoj
+Running as SYSTEM
+Building remotely on [8mha:////4BCaGD57/DedzA2GmY15h9qiwJM7r0C6aI4Xuku2i7AFAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6yQVF+VmpySUAECiHo8cAAAA=[0mcproject (gcc) in workspace /home/ubuntu/workspace/ctest
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/ubuntu/workspace/ctest/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/nmanojkoli1997/devopsclass.git # timeout=10
+Fetching upstream changes from https://github.com/nmanojkoli1997/devopsclass.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/nmanojkoli1997/devopsclass.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/main^{commit} # timeout=10
+Checking out Revision 0fa182cac12c0ca287b716eb4d16232258cf4bd6 (origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0fa182cac12c0ca287b716eb4d16232258cf4bd6 # timeout=10
+Commit message: "merge"
+ > git rev-list --no-walk 0fa182cac12c0ca287b716eb4d16232258cf4bd6 # timeout=10
+[ctest] $ /bin/bash /tmp/jenkins12471751219546136889.sh
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  git-daemon-run | git-daemon-sysvinit git-doc git-email git-gui gitk gitweb
+  git-cvs git-mediawiki git-svn
+The following packages will be upgraded:
+  git
+1 upgraded, 0 newly installed, 0 to remove and 78 not upgraded.
+Need to get 3132 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Get:1 http://ap-northeast-1.ec2.archive.ubuntu.com/ubuntu jammy-updates/main amd64 git amd64 1:2.34.1-1ubuntu1.5 [3132 kB]
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+dpkg-preconfigure: unable to re-open stdin: 
+Fetched 3132 kB in 0s (29.8 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 66093 files and directories currently installed.)
+Preparing to unpack .../git_1%3a2.34.1-1ubuntu1.5_amd64.deb ...
+Unpacking git (1:2.34.1-1ubuntu1.5) over (1:2.34.1-1ubuntu1.4) ...
+Setting up git (1:2.34.1-1ubuntu1.5) ...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+/tmp/jenkins12471751219546136889.sh: line 3: cd: devopsclass: No such file or directory
+/tmp/jenkins12471751219546136889.sh: line 4: make: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
